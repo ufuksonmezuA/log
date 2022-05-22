@@ -183,7 +183,7 @@ button{
 	left: 0;
 	width: 100%;
 	background-color: transparent;
-	z-index: var(--z--fixed);
+	z-index: var(--z-fixed);
 	transition: .4s;	
 }
 
@@ -371,6 +371,7 @@ button{
 
 
 .inventory__box {
+	width: calc(100% / 1.2);
   height: max-content;  
   background-color: #242424;
   border-radius: .5rem;
@@ -394,9 +395,10 @@ button{
 }
 
 .inventory__box a.item__link{
-  display: flex;
-  align-items: center;
-    width: 100%;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: var(--text-color);
 }
 
 .inventory__number {
