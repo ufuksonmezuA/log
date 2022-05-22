@@ -369,6 +369,105 @@ button{
 	bottom: 8rem;	
 }
 
+
+HTML CSS JS Result Skip Results Iframe
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bx {
+  font-size: 1.5rem;
+}
+
+body {
+  font-family: "product sans", sans-serif;
+  line-height: 1.2;
+  min-height: 100vh;
+  font-size: 1.25rem;
+  background-color: #161616;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.inventory__box {
+  height: max-content;  
+  background-color: #242424;
+  border-radius: .5rem;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;  
+}
+
+.tagged{
+  background-color: rgba(0,255,0,.2);
+}
+
+.nottagged{
+  background-color: rgba(255,0,0,.2);
+}
+
+.none {
+  display: none;
+}
+
+.inventory__box a.item__link{
+  display: flex;
+  align-items: center;
+    width: 100%;
+}
+
+.inventory__number {
+  width: 6rem;
+  height: 4rem;
+  border-radius: .5rem;
+  background-color: #161616;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+}
+
+.inventory__data{
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;  
+}
+
+.inventory__data span {
+  margin-bottom: .25rem;
+}
+
+.inventory__type, 
+.rectimeandcounter,
+.product__description {
+  font-size: 1rem;
+  opacity: .6;
+}
+
+.inventory__action--menu{
+  margin-left: 3rem;
+}
+
+.brand__product__description {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px){
