@@ -1,1 +1,1 @@
-# log daha modern bir lgtt.net clone çalışmadır.
+# log daha modern gizli bir websitesi için clone çalışmadır.
