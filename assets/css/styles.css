@@ -370,34 +370,6 @@ button{
 }
 
 
-HTML CSS JS Result Skip Results Iframe
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.bx {
-  font-size: 1.5rem;
-}
-
-body {
-  font-family: "product sans", sans-serif;
-  line-height: 1.2;
-  min-height: 100vh;
-  font-size: 1.25rem;
-  background-color: #161616;
-  color: #FFFFFF;
-  display: flex;
-  align-items: center;
-  justify-content: center;  
-}
-
 .inventory__box {
   height: max-content;  
   background-color: #242424;
