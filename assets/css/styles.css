@@ -131,6 +131,11 @@ button{
 .dark-theme .scrollup{
 	box-shadow: none;
 }
+
+.dark-theme .nav__username{
+	color: var(--first-color);
+}
+
 .dark-theme::-webkit-scrollbar{
 	background-color: hsl(228, 4%, 15%);
 }
@@ -154,7 +159,7 @@ button{
 }
 
 .section{
-	height: 75vh;
+	height: 100vh;
 	padding: 4.5rem 0 2rem;
 }
 
@@ -262,7 +267,7 @@ button{
 	background-color: var(--body-color);
 	box-shadow: 0 1px 4px hsla(228, 4%, 15%, .1);
 }
-
+.scroll-header .nav__logo,
 .scroll-header .nav__logo{
 	color: var(--first-color);
 }
@@ -372,27 +377,28 @@ display:none;
 
 
 .inventory__box {
-	width: calc(100% / 1.2);
-  height: max-content;  
-  background-color: #242424;
-  border-radius: .5rem;
-  cursor: pointer;
-  list-style: none;
-  position: relative;
-  padding: 1rem 1.5rem;
-  margin: 0 auto 1rem auto;
+    width: calc(100% / 1.2);
+    height: max-content;
+    background-color: var(--container-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    list-style: none;
+    font-size: var(--normal-font-size);
+    position: relative;
+    padding: 0.5rem 1rem;
+    margin: 1rem auto;
 }
 
 .tagged{
-  background-color: rgba(0,255,0,.2);
+	background-color: rgba(0,255,0,.2);
 }
 
 .nottagged{
-  background-color: rgba(255,0,0,.2);
+	background-color: rgba(255,0,0,.2);
 }
 
 .none {
-  display: none;
+	display: none;
 }
 
 .inventory__box a.item__link{
@@ -403,14 +409,16 @@ display:none;
 }
 
 .inventory__number {
-  width: 6rem;
-  height: 4rem;
-  border-radius: .5rem;
-  background-color: #161616;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 1.5rem;
+    width: max-content;
+    height: max-content;
+    border-radius: 0.5rem;
+    background-color: var(--body-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0.5rem;
+    margin-right: 1rem;
+}
 }
 
 .inventory__data{
@@ -431,12 +439,13 @@ display:none;
 }
 
 .inventory__action--menu{
-  margin-left: 3rem;
+  /*margin-left: 3rem;*/
 }
 
 .brand__product__description {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;	
 }
 
 
