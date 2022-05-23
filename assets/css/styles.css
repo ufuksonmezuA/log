@@ -286,6 +286,7 @@ button{
 	background: linear-gradient(170deg,
 				hsl(0, 0%, 22%) 0%,
 				hsl(0, 0%, 6%) 30%);
+display:none;
 }
 
 /*=============== BUTTON ===============*/
@@ -454,6 +455,7 @@ button{
 @media screen and (min-width: 576px){
 	.nav__menu{
 		width: max-content;
+width: calc(100% / 1.2);
 	}
 }
 
@@ -465,6 +467,7 @@ button{
 	
 	.nav__menu{
 		width: max-content;
+width: calc(100% / 1.2);
 	}	
 	
 	.nav__list{
