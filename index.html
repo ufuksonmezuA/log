@@ -1,111 +1,683 @@
 <!DOCTYPE html>
-<html lang="tr">
-<head>
-	<meta charset="UTF-8">
-	<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
-		
-	<!--=============== BOXICONS ===============-->
-	<link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'>
-		
-	<!--=============== CSS ===============-->
-	<link rel="stylesheet" href="assets/css/styles.css">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Log</title>
-</head>
-<body>
-	<!--==================== HEADER ====================-->
-    <header class="header" id="header">
-    	<nav class="nav container">
-		<div><a href="#" class="nav__logo">xCompany</a></div>
-		<div><a href="#" class="nav__username">UFUK</a></div>
-			<div class="nav__menu">
-				<ul class="nav__list">
-					<li class="nav__item">
-						<a href="#home" class="nav__link active-link">
-							<i class='bx bx-home-alt-2'></i>
-							<span>LOKASYON DEĞİŞTİR</span>
-						</a>							
-					</li>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 
-					<li class="nav__item">
-						<a href="#popular" class="nav__link">
-							<i class='bx bx-list-check'></i>
-							<span>KONTROL LİSTESİ</span>
-						</a>							
-					</li>
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" >
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 
-					<li class="nav__item">
-						<a href="#value" class="nav__link">
-							<i class='bx bx-image'></i>
-							<span>RESİM KONTROL</span>
-						</a>							
-					</li>
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/style.css">
 
-					<li class="nav__item">
-						<a href="#contact" class="nav__link">
-							<i class='bx bx-barcode'></i>
-							<span>BARKOD ARA</span>
-						</a>							
-					</li>						
-				</ul>
-			</div>
-				
-			<div class="nav__icon-menu">
-			<!-- Theme change button -->
-				<i class='bx bx-moon change-theme' id="theme-button"></i>
-				
-				<i class='bx bx-log-out nav__logout'></i>
-				<!-- <a href="#" class="button nav__button">Subscribe</a> -->
-			</div>
-		</nav>
-    </header>
+        <title>Logitta Business Services</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    Logitta <i class="bx bx-barcode"></i>
+                </a>
 
-    <!--==================== MAIN ====================-->
-    <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home section" id="home"></section>
+                <div  class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="bx bx-home-alt-2"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
 
-        <!--==================== LOGOS ====================-->
-		<section class="logos section">
-			<div class="inventory__box">
-				<a href="#" class="item__link">
-					<div class="inventory__number">blabla</div>
-					<div class="inventory__data">
-						<span class="brand__product__description">
-							<span class="brand"><b>blabla</b></span>
-							<span class="product__description">blablablablablablablabla</span>
-						</span>
-					</div>
-					<div class="inventory__action--menu">
-						<i class='bx bxs-copy'></i>
-					</div>
-				</a>
-			</div>
-		</section>
+                        <li class="nav__item">
+                            <a href="#popular" class="nav__link">
+                                <i class="bx bx-building-house"></i>
+                                <span>Award</span>
+                            </a>
+                        </li>
 
-        <!--==================== POPULAR ====================-->
-        <section class="section" id="popular"></section>
+                        <li class="nav__item">
+                            <a href="#hizmetlerimiz" class="nav__link">
+                                <i class="bx bx-award"></i>
+                                <span>Hizmetlerimiz</span>
+                            </a>
+                        </li>
 
-        <!--==================== VALUE ====================-->
-        <section class="value section" id="value"></section>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="bx bx-phone"></i>
+                                <span>İletisim</span>
+                            </a>
+                        </li>
 
-        <!--==================== CONTACT ====================-->
-        <section class="contact section" id="contact"></section>
+                        <li class="nav__item">
+                            <a href="#ik" class="nav__link">
+                                <i class="bx bx-award"></i>
+                                <span>İk</span>
+                            </a>
+                        </li>
 
-        <!--==================== SUBSCRIBE ====================-->
-        <section class="subscribe section"></section>        
-    </main>
+                    </ul>
+                </div>
 
-    <!--==================== FOOTER ====================-->
-    <footer class="footer section"></footer>
+                <!-- Theme change Button -->
+                <i class="bx bx-moon change-theme" id="theme-button"></i>
 
+                <a href="#" class="button nav__button">
+                    Login
+                </a>
+            </nav>
+        </header>
 
-    <!--========== SCROLL UP ==========-->
-	<a href="#" class="scrollup show-scroll" id="scroll-up">
-		<i class='bx bx-chevrons-up'></i>
-	</a>
-	
-    <!--=============== MAIN JS ===============-->
-	<script src="assets/js/main.js"></script>
-</body>
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Discover <br> Most Suitable <br> Property
+                        </h1>
+                        <p class="home__description">
+                            Find a variety of properties that suit you very easily, forget all difficulties in finding a residence for you
+                        </p>
+
+                        <form action="" class="home__search">
+                            <i class="bx bxs-map"></i>
+                            <input type="search" placeholder="Search by location..." class="home__search-input">
+                            <button class="button">Search</button>
+                        </form>
+
+                        <div class="home__value">
+                            <div>
+                                <h1 class="home__value-number">
+                                    9K <span>+</span>
+                                </h1>
+                                <span class="home__value-description">
+                                    Premium <br> Product
+                                </span>
+                            </div>
+
+                            <div>
+                                <h1 class="home__value-number">
+                                    2K <span>+</span>
+                                </h1>
+                                <span class="home__value-description">
+                                    Happy <br> Customer
+                                </span>
+                            </div>
+
+                            <div>
+                                <h1 class="home__value-number">
+                                    28K <span>+</span>
+                                </h1>
+                                <span class="home__value-description">
+                                    Awards <br> Winning
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home__images">
+                        <div class="home__orbe"></div>
+                        <div class="home__img">
+                            <img src="assets/images/home.jpg" alt="home">
+                        </div>
+                    </div>                            
+            </section>
+
+            <!--==================== STEPS ====================-->
+            <section class="steps section container">
+                <div class="steps__container grid">
+                    <div class="steps__card">
+                        <div class="steps__card-number"><i class="bx bx-slideshow"></i></div>
+                        <h3 class="steps__card-title">Sabit Kıymet Sayımı</h3>
+                        <p class="steps__card-description">
+                            Her projede olduğu gibi başarılı bir sabit kıymet projesi de doğru analiz ve planlama ile ortaya çıkmaktadır. Bu konudaki tecrübe ve uzmanlığımıza dayanarak sabit kıymet proje yönetiminin içinde oluşturduğumuz çözümleri sizler için şekillendirdik.
+                        </p>
+                        <button class="button">Sunum Dosyasını İndirin!</button>
+                    </div>
+
+                    <div class="steps__card">
+                        <div class="steps__card-number"><i class="bx bx-group"></i></div>
+                        <h3 class="steps__card-title">Çözüm Ortaklarımız</h3>
+                        <p class="steps__card-description">
+                            Demirbaşların yönetilmesi, insanları, prosesleri ve teknolojileri entegre ederek maliyetlerin kontrolünü içeren, yeni alınacak demirbaşların firma uygunluğunu sağlayan ve son kullanıcıların verimliliğini artıran yüksek seviyeli işlerden birisidir. Demirbaş takip sistemleri sizleri çok zahmetten kurtaracak ve Demirbaşların kontrolünü sağlamanıza yardımcı olacaktır.
+                        </p>
+                    </div>
+
+                    <div class="steps__card map">
+                        <div class="steps__card-number"><i class="bx bx-paper-plane"></i></div>
+                        <h3 class="steps__card-title">Yurtdışı Projelerimiz</h3>
+                        <p class="steps__card-description">
+                            Logitta olarak yurtdışında da hizmet vermekteyiz. Bugüne kadar Türkiye dışında Mısır, Cezayir, İran, Suudi Arabistan, Hırvatistan ve Tataristan (Rusya) da başarılı projelere imza attık.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== POPULAR ====================-->
+            <section class="section" id="popular">
+                <div class="container">
+                    <span class="section__subtitle">Envanter sayımında</span>
+                    <h2 class="section__title">Bizi seçen Firmalar</h2>
+
+                    <div class="popular__container swiper">
+                        <div class="swiper-wrapper">
+                            <article class="popular__card swiper-slide">
+                                <img src="assets/images/popular1.jpg" alt="" class="popular__img">
+
+                                <div class="popular__data">
+                                    <h3 class="popular__title">
+                                        Garden City Assat
+                                    </h3>
+                                    <p class="popular__description">
+                                        Street The Garden City Of Miraflores, Lima - Perú Av. Sol #9876
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="popular__card swiper-slide">
+                                <img src="assets/images/popular2.jpg" alt="" class="popular__img">
+
+                                <div class="popular__data">
+                                    <h3 class="popular__title">
+                                       Gables Luxurious House
+                                    </h3>
+                                    <p class="popular__description">
+                                        Street The Garden City Of Miraflores, Lima - Perú Av. Sol #9876
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="popular__card swiper-slide">
+                                <img src="assets/images/popular3.jpg" alt="" class="popular__img">
+
+                                <div class="popular__data">
+                                    <h3 class="popular__title">
+                                        Garden Orchard City
+                                    </h3>
+                                    <p class="popular__description">
+                                        Street The Garden City Of Miraflores, Lima - Perú Av. Sol #9876
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="popular__card swiper-slide">
+                                <img src="assets/images/popular4.jpg" alt="" class="popular__img">
+
+                                <div class="popular__data">
+                                    <h3 class="popular__title">
+                                        Luxurious City Garden
+                                    </h3>
+                                    <p class="popular__description">
+                                        Street The Garden City Of Miraflores, Lima - Perú Av. Sol #9876
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="popular__card swiper-slide">
+                                <img src="assets/images/popular5.jpg" alt="" class="popular__img">
+
+                                <div class="popular__data">
+                                    <h3 class="popular__title">
+                                        Aliva Private Garden
+                                    </h3>
+                                    <p class="popular__description">
+                                        Street The Garden City Of Miraflores, Lima - Perú Av. Sol #9876
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-button-prev">
+                            <i class="bx bxs-chevron-left"></i>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="bx bxs-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== VALUE ====================-->
+            <section class="value section" id="hizmetlerimiz">
+                <div class="value__container container grid">
+                    <div class="value__images">
+                        <div class="value__orbe"></div>
+
+                        <div class="value__img">
+                            <img src="assets/images/value.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="value__content">
+                        <div class="value__data">
+                            <span class="section__subtitle">Envanter sayımında</span>
+                            <h2 class="section__title">Hizmetlerimiz<span>.</span></h2>
+                            <p class="value__description">
+                                Sizlere en iyi hizmeti sunarak her zaman yardımcı olmaya hazırız.
+                            </p>
+                        </div>
+
+                        <div class="value__accordion">
+                            <div class="value__accordion-item">
+                                <header class="value__accordion-header">
+                                    <i class="bx bx-health value__accordion-icon"></i>
+                                    <h3 class="value__accordion-title">
+                                        1. Sabit Kıymet Yönetimi
+                                    </h3>
+                                    <div class="value__accordion-arrow">
+                                        <i class="bx bx-down-arrow"></i>
+                                    </div>
+                                </header>
+                                <div class="value__accordion-content">
+                                    <p class="value__accordion-description">
+                                        Kurumsal kaynakların planlanması sürecinde sabit kıymet alımları işletmeler için büyük maliyet kalemleridir. Sabit kıymetlerin doğru planlanması ve yönetilmesi yapılan yatırımların geri dönüş performansının ve beklenilen verimin arttırılması açısından önem arz etmektedir.
+                                    </p>
+                                    <p class="value__accordion-description">
+                                        Büyüyen firma yapıları ve daha da karmaşık bir hal alan demirbaş yönetimi konusu artık sıradan bir iş değil, firmalar için rekabet avantajı sağlayan bir süreç haline gelmiştir.
+                                    </p>
+                                    <p class="value__accordion-description">
+                                        Her projede olduğu gibi başarılı bir sabit kıymet projesi de doğru analiz ve planlama ile ortaya çıkmaktadır. Bu konudaki tecrübe ve uzmanlığımıza dayanarak sabit kıymet proje yönetiminin içinde oluşturduğumuz çözümleri sizler için aşağıdaki gibi şekillendirdik.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="value__accordion-item">
+                                <header class="value__accordion-header">
+                                    <i class="bx bx-health value__accordion-icon"></i>
+                                    <h3 class="value__accordion-title">
+                                        1.1. Proje Planlama ve Tasarım (PPT-G)
+                                    </h3>
+                                    <div class="value__accordion-arrow">
+                                        <i class="bx bx-down-arrow"></i>
+                                    </div>
+                                </header>
+                                <div class="value__accordion-content">
+                                    <p class="value__accordion-description">
+                                        Proje planlama adımı sabit kıymet projelerinin en önemli sürecidir. Bu noktada yapılan yanlış tercihler tüm projeyi olumsuz etkileyecek ve projenin başarı oranını büyük ölçüde düşürecektir.
+                                    </p>
+                                    <p class="value__accordion-description">
+                                        Sabit kıymet sayımı yapılacak alanda yapılan fiziksel keşif çalışması ile başlar. Keşif çalışmasının ardından karşılıklı ihtiyaçların belirlenmesiyle birlikte, tüm projenin detaylı planlama ve tasarım aşamaları PPT (Proje Planlama ve Tasarım) dökümanında yer alır.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="value__accordion-item">
+                                <header class="value__accordion-header">
+                                    <i class="bx bx-health value__accordion-icon"></i>
+                                    <h3 class="value__accordion-title">
+                                        1.2. Fiziksel Sayım, Etiketleme ve Veri Toplama
+                                    </h3>
+                                    <div class="value__accordion-arrow">
+                                        <i class="bx bx-down-arrow"></i>
+                                    </div>
+                                </header>
+                                <div class="value__accordion-content">
+                                    <p class="value__accordion-description">
+                                        Logitta optimize ettiği operasyonel süreçleri ve gelişmiş donanım altyapısı ile projelerini; daha kısa sürede ve yüksek hizmet kalitesiyle gerçekleştirmektedir.
+                                    </p>
+                                    <p class="value__accordion-description">
+                                        Etiket seçimi konusunda dayanıklı ve yapışma performansı açısından üstün sarf malzemeleri tercih edilmektedir.
+                                    </p>
+                                    <p class="value__accordion-description">
+                                        Sayım sürecinde hiyerarşik veri toplama metodu kullanılır. Standart envanter sayımı bilgilerinin dışında (Malzeme Adı, Tip, Marka, Model, Seri no vs.) ihtiyaç duyulan farklı detay bilgiler de (Zimmet, Masraf Yeri, Üretim Hat-Kodu gibi.) toplanabilir.
+                                    </p>
+                                    <p class="value__accordion-description">
+                                        Projede demirbaş sayımı boyunca konusunda uzman ekipler görevlendirilir.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="value__accordion-item">
+                                <header class="value__accordion-header">
+                                    <i class="bx bx-health value__accordion-icon"></i>
+                                    <h3 class="value__accordion-title">
+                                        1.3. Finansal Eşleştirme (Karşılaştırma)
+                                    </h3>
+                                    <div class="value__accordion-arrow">
+                                        <i class="bx bx-down-arrow"></i>
+                                    </div>
+                                </header>
+                                <div class="value__accordion-content">
+                                    <p class="value__accordion-description">
+                                        Fiziksel demirbaş sayımı ile sistemdeki defter (Mali Kayıtlar) kayıtlarının eşleştirilmesi işlemini kapsar. Eşleştirme işleminin başarısı fiziksel sayım adımının kalitesiyle doğrudan bağlantılıdır. Fiziksel sayımın eşleştirme işlemi için sağladığı verilerin uygun formatlarda olması ve veri bütünlüğünü sağlaması gerekir.
+                                    </p>
+                                    <p class="value__accordion-description">
+                                        Eşleştirme işlemi uzman kişiler tarafından yapılması gereken bir tür spesifik işlemler bütünüdür.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="value__accordion-item">
+                                <header class="value__accordion-header">
+                                    <i class="bx bx-health value__accordion-icon"></i>
+                                    <h3 class="value__accordion-title">
+                                        1.4. Yazılım Entegrasyonu
+                                    </h3>
+                                    <div class="value__accordion-arrow">
+                                        <i class="bx bx-down-arrow"></i>
+                                    </div>
+                                </header>
+                                <div class="value__accordion-content">
+                                    <p class="value__accordion-description">
+                                        Sayım ve eşleştirmenin ardından oluşturulan verilerin profosyonel bir demirbaş yazılımında takip edilmesi gerekir. Logitta Demirbaş Takip Sistemi AssetLog sabit kıymet süreciyle ilgili tüm ihtiyaçlarınızı karşılayacaktır. AssetLog’un mevcut modülleri dışında spesifik ihtiyaçlarınıza göre de geliştirmeler yapılabilmektedir.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="value__accordion-item">
+                                <header class="value__accordion-header">
+                                    <i class="bx bx-health value__accordion-icon"></i>
+                                    <h3 class="value__accordion-title">
+                                        1.5. Sürdürülebilir Sabit Kıymet Yönetimi
+                                    </h3>
+                                    <div class="value__accordion-arrow">
+                                        <i class="bx bx-down-arrow"></i>
+                                    </div>
+                                </header>
+                                <div class="value__accordion-content">
+                                    <p class="value__accordion-description">
+                                        Sisteme entegre edilen sayım sonucu sürdürülebilir sabit kıymet yaşam döngüsünün alt yapısını oluşturur. Satınalmadan hurdaya ayırma işlemine kadar süreci kapsayan ve sabit kıymetlerin durum değişikliklerinin takip edilmesini sağlayan sabit kıymet yönetim prosedürleri hayata geçirilir.
+                                    </p>
+                                    <p class="value__accordion-description">
+                                        Sabit Kıymet projeleri anlık bir proje olarak değil sürekli sürdürülmesi gereken bir yönetim süreci olarak değerlendirilmelidir. Başarılı bir sabit kıymet yönetim sistemi kurumunuza stratejik anlamda fayda sağlayacak veriler üretir.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="value__accordion-item">
+                                <header class="value__accordion-header">
+                                    <i class="bx bx-health value__accordion-icon"></i>
+                                    <h3 class="value__accordion-title">
+                                        2. Logitta Demirbaş Takip Sistemi (AssetLog)
+                                    </h3>
+                                    <div class="value__accordion-arrow">
+                                        <i class="bx bx-down-arrow"></i>
+                                    </div>
+                                </header>
+                                <div class="value__accordion-content">
+                                    <p class="value__accordion-description">
+                                        Logitta Demirbaş Takip Sistemi operasyonel yetenekleri ve esnek yapısıyla müşterilerimize en hızlı şekilde fayda sağlamaktadır. 
+                                    </p>
+                                    <p class="value__accordion-description">
+                                        Tamamen müşteri ihtiyaçlarını öne alarak kurgulanmış ve kurum süreçlerine en az efor ve zaman harcanarak entegre olması amaçlanmıştır. Basit ve esnek yapısıyla müşterilerine yüksek oranda fayda sağlamaktadır.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="value__accordion-item">
+                                <header class="value__accordion-header">
+                                    <i class="bx bx-health value__accordion-icon"></i>
+                                    <h3 class="value__accordion-title">
+                                        3. Demirbaş Takip Sisteminde RF_ID
+                                    </h3>
+                                    <div class="value__accordion-arrow">
+                                        <i class="bx bx-down-arrow"></i>
+                                    </div>
+                                </header>
+                                <div class="value__accordion-content">
+                                    <p class="value__accordion-description">
+                                        Logitta RF_ID Demirbaş Takip Sistemi hızlı sayım, takip ve izlenme sağlar. RF_ID teknolojisi ile sayım periyodları kısaltılabildiği için daha çok kontrol ve hizmet maliyetlerinin gözle görülür oranda düşmesini sağlar.
+                                    </p>
+                                    <p class="value__accordion-description">
+                                        Her türlü tesis tipinde üretim, ofis, otel hastane vb uygun yapıda kurgulanabilir ve varlık verilerini sürekli güncel tutarak sistemin kendi oto kontrolünü sağlamasına olanak verir.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ====================-->
+            <section class="contact section" id="contact">
+                <div class="contact__container container grid">
+                    <div class="contact__images">
+                        <div class="contact__orbe"></div>
+                        <div class="contact__img">
+                            <img src="assets/images/contact.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <div class="contact__data">
+                            <span class="section__subtitle">Bize Ulaşın</span>
+                            <h2 class="section__title">Bizimle İletişime Geçin<span>.</span></h2>
+                            <p class="contact__description">
+                                Is there a problem finding your dream home? Need a 
+                                guide in buying first home? or need a consultation 
+                                on residential issues? just contact us.
+                            </p>
+                        </div>
+
+                        <div class="contact__card">
+                            <div class="contact__card-box">
+                                <div class="contact__card-info">
+                                    <i class="bx bx-phone-call"></i>
+                                    <div>
+                                        <h3 class="contact__card-title">
+                                            Telefon
+                                        </h3>
+                                        <p class="contact__card-description">
+                                            0520 123 45 67
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <button class="button contact__card-button">
+                                    <a href="tel:+905201234567">
+                                        Ara
+                                    </a>
+                                </button>
+                            </div>
+
+                            <div class="contact__card-box">
+                                <div class="contact__card-info">
+                                    <i class="bx bx-message-rounded-dots" ></i>
+                                    <div>
+                                        <h3 class="contact__card-title">
+                                            Mesaj
+                                        </h3>
+                                        <p class="contact__card-description">
+                                            0520 123 45 67
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <button class="button contact__card-button">
+                                    <a href="tel:+905201234567">
+                                        Mesaj
+                                    </a>
+                                </button>
+                            </div>
+
+                            <div class="contact__card-box">
+                                <div class="contact__card-info">
+                                    <i class="bx bx-video" ></i>
+                                    <div>
+                                        <h3 class="contact__card-title">
+                                            Görüntülü arama
+                                        </h3>
+                                        <p class="contact__card-description">
+                                            0520 123 45 67
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <button class="button contact__card-button">
+                                    <a href="tel:+905201234567">
+                                        Görüntülü Ara
+                                    </a>
+                                </button>
+                            </div>
+
+                            <div class="contact__card-box">
+                                <div class="contact__card-info">
+                                    <i class="bx bx-envelope" ></i>
+                                    <div>
+                                        <h3 class="contact__card-title">
+                                            Mail
+                                        </h3>
+                                        <p class="contact__card-description">
+                                            0520 123 45 67
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <button class="button contact__card-button">
+                                    <a href="mailto:info@logitta.com">
+                                        Mail Gönder
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SUBSCRIBE ====================-->
+            <section class="subscribe section" id="ik">
+                <div class="subscribe__container container">
+                    <h1 class="subscribe__title">
+                        İnsan Kaynakları
+                    </h1>
+                    <p class="subscribe__description">
+                        Çalışanlarımızın teknik kapasite ve performans seviyelerini sürekli yukarıda tutmak için kurum içi eğitime maksimum düzeyde önem verilmektedir.
+                    </p>                        
+                    <p class="subscribe__description">    
+                        Logitta yürüttüğü projelerde dönemsel (proje bazlı) sayım personellerine ihtiyaç duymaktadır. İş başvurusu yapmak için güncel CV'nizi <b>ik@logitta.com</b> adresine gönderebilirsiniz. Başvurunuz incelendikten sonra eğer olumlu ise tarafınıza dönüş yapılacaktır.
+                    </p>
+                    
+                    <button class="button">
+                        <a href="mailto:info@logitta.com">
+                            Mail Gönder
+                        </a>
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div>
+                    <a href="#" class="footer__logo">
+                        Logitta <i class="bx bx-barcode"></i>
+                    </a>
+                    <p class="footer_description">
+                        Logitta, şirket değerlerini ilke edinerek<br>global bir şirket olma yolunda ilerlemektedir.
+                    </p>
+                </div>
+
+                <div class="footer__content">
+                    <div>
+                        <h3 class="footer__title">
+                            Hakkında
+                        </h3>
+
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Hakkımızda</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Özellikler</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Haberler ve Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">
+                            Şirket
+                        </h3>
+
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Biz nasıl çalışırız?</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">
+                                Merkez Ofis</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Güvenlik</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">
+                            Destek
+                        </h3>
+
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">
+                                SSS</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Destek Merkezi</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Bize Ulaşın</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">
+                            Bizi takip et
+                        </h3>
+
+                        <ul class="footer__social">
+                            <a href="#" class="footer__social-link">
+                                <i class="bx bxl-linkedin-square" ></i>
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <i class="bx bxl-twitter"></i>
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <i class="bx bxl-facebook-square" ></i>
+                            </a>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer__info container">
+                <span class="footer__copy">
+                    <script>
+                        var tarih=new Date();
+                        var yil=tarih.getFullYear();
+                        document.write("&#169;&nbsp2011-"+yil+"&nbspTüm Hakları Saklıdır.");
+                    </script>
+                </span>
+
+                <div class="footer__privacy">
+                    <a href="#">Şartlar ve Sözleşmeler</a>
+                    <a href="#">Gizlilik Politikası</a>                    
+                </div>
+            </div>
+        </footer>
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="bx bx-chevrons-up"></i>
+        </a>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
