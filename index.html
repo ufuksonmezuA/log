@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html lang="en">
+    <html lang="tr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,10 +23,10 @@
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav__logo">
-                    Logitta <i class="bx bx-barcode"></i>
+                    Logitta <i class="bx bx-barcode nav__logo-icon"></i>
                 </a>
 
-                <div  class="nav__menu">
+                <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
                             <a href="#home" class="nav__link active-link">
@@ -36,9 +36,9 @@
                         </li>
 
                         <li class="nav__item">
-                            <a href="#popular" class="nav__link">
-                                <i class="bx bx-building-house"></i>
-                                <span>Award</span>
+                            <a href="#hizmetlerimiz" class="nav__link">
+                                <i class="bx bx-award"></i>
+                                <span>Hakkımızda</span>
                             </a>
                         </li>
 
@@ -50,9 +50,23 @@
                         </li>
 
                         <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class="bx bx-phone"></i>
-                                <span>İletisim</span>
+                            <a href="#hizmetlerimiz" class="nav__link">
+                                <i class="bx bx-award"></i>
+                                <span>Kalite Yönetimi</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#hizmetlerimiz" class="nav__link">
+                                <i class="bx bx-award"></i>
+                                <span>asseTLog</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#popular" class="nav__link">
+                                <i class="bx bx-building-house"></i>
+                                <span>Referanslar</span>
                             </a>
                         </li>
 
@@ -63,32 +77,63 @@
                             </a>
                         </li>
 
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="bx bx-phone"></i>
+                                <span>İletisim</span>
+                            </a>
+                        </li>
                     </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
                 </div>
 
-                <!-- Theme change Button -->
-                <i class="bx bx-moon change-theme" id="theme-button"></i>
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="bx bx-moon change-theme" id="theme-button"></i>
+                    
+                    <i class="bx bx-menu nav__toggle" id="nav-toggle"></i>
 
-                <a href="#" class="button nav__button">
-                    Login
-                </a>
+                    <a href="#" class="button nav__button">Login</a>
+                </div>
             </nav>
         </header>
 
         <!--==================== MAIN ====================-->
-        <main class="main">
+        <main class="main" id="main">
             <!--==================== HOME ====================-->
             <section class="home section" id="home">
                 <div class="home__container container grid">
                     <div class="home__data">
                         <h1 class="home__title">
-                            Discover <br> Most Suitable <br> Property
+                            Demirbaş Sayımı
                         </h1>
                         <p class="home__description">
-                            Find a variety of properties that suit you very easily, forget all difficulties in finding a residence for you
+                            Barkodlama, Veri Toplama, Fotoğraf Çekimi
+                        </p>
+                        <h3 class="home__title">
+                            Finansal Eşleştirme
+                        </h3>
+                        <p class="home__description">
+                            Defter Kayıtları == Sayım Datası
+                        </p>
+                        <h3 class="home__title">
+                            Demirbaş Yazılımı
+                        </h3>
+                        <p class="home__description">
+                            AsseTlog Demirbaş Takip Sistemi
+                        </p>
+                        <h3 class="home__title">
+                            RFID
+                        </h3>
+                        <p class="home__description">
+                            RFID Teknolojisi ile Sayım ve Etiketleme
                         </p>
 
-                        <form action="" class="home__search">
+
+                      <!--      <form action="" class="home__search">
                             <i class="bx bxs-map"></i>
                             <input type="search" placeholder="Search by location..." class="home__search-input">
                             <button class="button">Search</button>
@@ -121,7 +166,7 @@
                                     Awards <br> Winning
                                 </span>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                     <div class="home__images">
                         <div class="home__orbe"></div>
@@ -151,12 +196,20 @@
                         </p>
                     </div>
 
-                    <div class="steps__card map">
-                        <div class="steps__card-number"><i class="bx bx-paper-plane"></i></div>
+                    <div class="steps__card">
+                <div class="steps__card-number"><i class="bx bx-paper-plane"></i></div>
                         <h3 class="steps__card-title">Yurtdışı Projelerimiz</h3>
                         <p class="steps__card-description">
-                            Logitta olarak yurtdışında da hizmet vermekteyiz. Bugüne kadar Türkiye dışında Mısır, Cezayir, İran, Suudi Arabistan, Hırvatistan ve Tataristan (Rusya) da başarılı projelere imza attık.
+                            Logitta olarak yurtdışında da hizmet vermekteyiz. Bugüne kadar Türkiye dışında da başarılı projelere imza attık.
                         </p>
+                            <div class="country__list">
+                                <span>Mısır</span>
+                                <span>Cezayir</span>
+                                <span>İran</span>
+                                <span>Suudi Arabistan</span>
+                                <span>Hırvatistan</span>
+                                <span>Tataristan (Rusya)</span>
+                            </div>                            
                     </div>
                 </div>
             </section>
@@ -171,65 +224,120 @@
                         <div class="swiper-wrapper">
                             <article class="popular__card swiper-slide">
                                 <img src="assets/images/popular1.jpg" alt="" class="popular__img">
-
                                 <div class="popular__data">
                                     <h3 class="popular__title">
-                                        Garden City Assat
+                                        İBB Metro İstanbul
                                     </h3>
                                     <p class="popular__description">
-                                        Street The Garden City Of Miraflores, Lima - Perú Av. Sol #9876
+                                        İBB Metro İstanbul tüm metro istasyon ve atölyelerindeki demirbaş sayımında Logitta'yı tercih etti.
                                     </p>
                                 </div>
                             </article>
 
                             <article class="popular__card swiper-slide">
                                 <img src="assets/images/popular2.jpg" alt="" class="popular__img">
-
                                 <div class="popular__data">
                                     <h3 class="popular__title">
-                                       Gables Luxurious House
+                                       İBB Beltur
                                     </h3>
                                     <p class="popular__description">
-                                        Street The Garden City Of Miraflores, Lima - Perú Av. Sol #9876
+                                        İBB Beltur tüm tesislerinde demirbaş sayımında Logitta'yı tercih etti.
                                     </p>
                                 </div>
                             </article>
 
                             <article class="popular__card swiper-slide">
                                 <img src="assets/images/popular3.jpg" alt="" class="popular__img">
-
                                 <div class="popular__data">
                                     <h3 class="popular__title">
-                                        Garden Orchard City
+                                        Renault Türkiye
                                     </h3>
                                     <p class="popular__description">
-                                        Street The Garden City Of Miraflores, Lima - Perú Av. Sol #9876
+                                        Renault Türkiye'deki tüm tedarikçi demirbaş sayımında Logitta'yı tercih etti.
                                     </p>
                                 </div>
                             </article>
 
                             <article class="popular__card swiper-slide">
                                 <img src="assets/images/popular4.jpg" alt="" class="popular__img">
-
                                 <div class="popular__data">
                                     <h3 class="popular__title">
-                                        Luxurious City Garden
+                                        ABB
                                     </h3>
                                     <p class="popular__description">
-                                        Street The Garden City Of Miraflores, Lima - Perú Av. Sol #9876
+                                        ABB demirbaş sayımında Logitta'yı tercih etti.
                                     </p>
                                 </div>
                             </article>
 
                             <article class="popular__card swiper-slide">
                                 <img src="assets/images/popular5.jpg" alt="" class="popular__img">
-
                                 <div class="popular__data">
                                     <h3 class="popular__title">
-                                        Aliva Private Garden
+                                        Bosch
                                     </h3>
                                     <p class="popular__description">
-                                        Street The Garden City Of Miraflores, Lima - Perú Av. Sol #9876
+                                        Bosch Diesel Fabrikaları demirbaş sayımında Logitta'yı tercih etti.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="popular__card swiper-slide">
+                                <img src="assets/images/popular5.jpg" alt="" class="popular__img">
+                                <div class="popular__data">
+                                    <h3 class="popular__title">
+                                        Valeo Elektrik
+                                    </h3>
+                                    <p class="popular__description">
+                                        Valeo Elektrik, Silecek ve Debriyaj fabrikalarının demirbaş sayım projesinde Logitta'yı tercih etti.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="popular__card swiper-slide">
+                                <img src="assets/images/popular5.jpg" alt="" class="popular__img">
+                                <div class="popular__data">
+                                    <h3 class="popular__title">
+                                        İGA
+                                    </h3>
+                                    <p class="popular__description">
+                                        İGA İstanbul Hava Limanı'nın demirbaş sayımında Logitta'yı tercih etti.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="popular__card swiper-slide">
+                                <img src="assets/images/popular5.jpg" alt="" class="popular__img">
+                                <div class="popular__data">
+                                    <h3 class="popular__title">
+                                        Boehringer Ingelheim
+                                    </h3>
+                                    <p class="popular__description">
+                                        Boehringer Ingelheim demirbaş sayımında Logitta'yı tercih etti.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="popular__card swiper-slide">
+                                <img src="assets/images/popular5.jpg" alt="" class="popular__img">
+                                <div class="popular__data">
+                                    <h3 class="popular__title">
+                                        Bosch Rexroth
+                                    </h3>
+                                    <p class="popular__description">
+                                        Bosch Rexroth demirbaş sayım projesinde Logitta'yı tercih etti.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="popular__card swiper-slide">
+                                <img src="assets/images/popular5.jpg" alt="" class="popular__img">
+                                <div class="popular__data">
+                                    <h3 class="popular__title">
+                                        Cornelia Otel
+                                    </h3>
+                                    <p class="popular__description">
+                                        Cornelia Otel Grubu demirbaş sayım projesinde Logitta'yı tercih etti.
                                     </p>
                                 </div>
                             </article>
@@ -436,8 +544,33 @@
                 </div>
             </section>
 
+
+
             <!--==================== CONTACT ====================-->
             <section class="contact section" id="contact">
+                            <!--==================== SUBSCRIBE ====================-->
+ 
+                <div class="subscribe__container container">
+                    <h1 class="subscribe__title">
+                        İnsan Kaynakları
+                    </h1>
+                    <p class="subscribe__description">
+                        Çalışanlarımızın teknik kapasite ve performans seviyelerini sürekli yukarıda tutmak için kurum içi eğitime maksimum düzeyde önem verilmektedir.
+                    </p>                        
+                    <p class="subscribe__description">    
+                        Logitta yürüttüğü projelerde dönemsel (proje bazlı) sayım personellerine ihtiyaç duymaktadır. İş başvurusu yapmak için güncel CV'nizi <b>ik@logitta.com</b> adresine gönderebilirsiniz. Başvurunuz incelendikten sonra eğer olumlu ise tarafınıza dönüş yapılacaktır.
+                    </p>
+                    
+                    <button class="button">
+                        <a href="mailto:info@logitta.com">
+                            Mail Gönder
+                        </a>
+                    </button>
+                </div>
+
+
+
+
                 <div class="contact__container container grid">
                     <div class="contact__images">
                         <div class="contact__orbe"></div>
@@ -448,12 +581,10 @@
 
                     <div class="contact__content">
                         <div class="contact__data">
-                            <span class="section__subtitle">Bize Ulaşın</span>
+                            <span class="section__subtitle">Envanter sayımı için</span>
                             <h2 class="section__title">Bizimle İletişime Geçin<span>.</span></h2>
                             <p class="contact__description">
-                                Is there a problem finding your dream home? Need a 
-                                guide in buying first home? or need a consultation 
-                                on residential issues? just contact us.
+                                
                             </p>
                         </div>
 
@@ -503,7 +634,7 @@
                                     <i class="bx bx-video" ></i>
                                     <div>
                                         <h3 class="contact__card-title">
-                                            Görüntülü arama
+                                            Görüntülü
                                         </h3>
                                         <p class="contact__card-description">
                                             0520 123 45 67
@@ -526,7 +657,7 @@
                                             Mail
                                         </h3>
                                         <p class="contact__card-description">
-                                            0520 123 45 67
+                                            info@logitta.com
                                         </p>
                                     </div>
                                 </div>
@@ -539,27 +670,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <!--==================== SUBSCRIBE ====================-->
-            <section class="subscribe section" id="ik">
-                <div class="subscribe__container container">
-                    <h1 class="subscribe__title">
-                        İnsan Kaynakları
-                    </h1>
-                    <p class="subscribe__description">
-                        Çalışanlarımızın teknik kapasite ve performans seviyelerini sürekli yukarıda tutmak için kurum içi eğitime maksimum düzeyde önem verilmektedir.
-                    </p>                        
-                    <p class="subscribe__description">    
-                        Logitta yürüttüğü projelerde dönemsel (proje bazlı) sayım personellerine ihtiyaç duymaktadır. İş başvurusu yapmak için güncel CV'nizi <b>ik@logitta.com</b> adresine gönderebilirsiniz. Başvurunuz incelendikten sonra eğer olumlu ise tarafınıza dönüş yapılacaktır.
-                    </p>
-                    
-                    <button class="button">
-                        <a href="mailto:info@logitta.com">
-                            Mail Gönder
-                        </a>
-                    </button>
                 </div>
             </section>
         </main>
