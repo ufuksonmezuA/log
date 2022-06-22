@@ -98,7 +98,6 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-
 /*=============== SWIPER POPULAR ===============*/
 var swiperPopular = new Swiper('.popular__container', {
     spaceBetween: 32,
