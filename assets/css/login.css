@@ -1,52 +1,26 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem;
-
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
+  /* Color mode HSL & RGB */
   --first-color: hsl(228, 66%, 62%);
-  --second-color: hsl(25, 67%, 54%);
-  --title-color: hsl(228, 8%, 95%);
-  --text-color: hsl(228, 8%, 70%);
-  --border-color: hsl(228, 16%, 14%);
-  --body-color: hsl(228, 12%, 8%);
-  --container-color: hsl(228, 16%, 12%);
-  --border-radius: .5rem;
+  --white-color: #fff;
+  --black-color: #000;
+  --body-color: hsl(228, 16%, 12%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Raleway', sans-serif;
-  --biggest-font-size: 2.25rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
+  --body-font: 'Poppins', sans-serif;
   --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
-  --icon-font-size: 1.25rem;
-
-  /*========== Font weight ==========*/
-  --font-medium: 500;
-  --font-semi-bold: 600;
-
-  /*========== z index ==========*/
-  --z-tooltip: 10;
-  --z-fixed: 100;
+  --tiny-font-size: .563rem;
 }
 
 /* Responsive typography */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 968px) {
   :root {
-    --biggest-font-size: 4rem;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
   }
 }
 
@@ -55,152 +29,148 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  outline: none;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
-	font-family: var(--body-font);
-	font-size: var(--normal-font-size);
-	background-color: var(--body-color);
-	color: var(--text-color);
-	transition: .3s; /* For animation dark mode */
-}
-
-h1, h2, h3 {
-	color: var(--title-color);
-	font-weight: var(--font-semi-bold);
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-input,
-button {
   font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+}
+
+/*=============== MODERN INPUT ===============*/
+.form {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0 1.5rem;
+}
+
+.form__content {
+  display: grid;
+  place-items: center;
+  row-gap: 1.5rem;
+  color: var(--white-color);
+}
+
+.form__input, 
+.form__label, 
+.form__submit {
+  border: 0;
   outline: none;
-  border: none;
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  color: var(--black-color);
 }
 
-/*=============== FORM ===============*/
-.form  {
-	width: 22.5rem;
-	height: auto;
-	margin: 0;	
-	padding: 2rem;
-	border-radius: 1rem;
-	background-color: var(--container-color);
+.form__box {
+  width: 288px;
+  height: 56px;
+  position: relative;
 }
 
-.form__title {
-	/*text-indent: -999999999;*/
-	color: var(--text-color);
-	font-weight: 400;
-	height: 70px;
-	margin: 0 0 2rem 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-image: url();
-	background-repeat: no-repeat;
-	background-position: center;
-	filter: brightness(0) invert(1);
-	text-transform: uppercase;	
-}
-
-.form__div {
-	position: relative;
-	height: 4.5rem;
-	margin-bottom: 1.5rem;
+.form__shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black-color);
+  border-radius: 0.5rem;  
 }
 
 .form__input {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	color: var(--text-color);
-	font-size: var(--normal-font-size);
-	border: .2rem solid var(--border-color);
-	border-radius: .5rem;
-	outline: none;
-	padding: 1rem;
-	background: transparent;
-	z-index: 1;
+  position: absolute;
+  border: .25rem solid var(--white-color);
+  background-color: var(--white-color);
+  border-radius: 0.4rem;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  padding: 18px;
+  transition: transform .3s;
+}
+
+.form__input::placeholder {
+  color: inherit;
+  transition: opacity .5s;
 }
 
 .form__label {
-	position: absolute;
-	left: 1rem;
-	top: 1.7rem;
-	padding: 0 .5rem;
-	background-color: var(--container-color);
-	color: var(--text-color);
-	font-size: var(--normal-font-size);
-	font-weight: var(--font-semi-bold);
-	transition: .150s;
+  z-index: 100;
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  font-size: var(--tiny-font-size);
+  font-weight: 600;
+  transition: .2s;
+  pointer-events: none;
+  opacity: 0;
 }
 
 .form__button {
-	display: block;
-	width: 100%;
-	height: 4.5rem;
-	outline: none;
-	border: none;
-	background-color: var(--body-color);
-	color: var(--text-color);
-	font-size: var(--normal-font-size);
-	font-weight: var(--font-semi-bold);
-	border-radius: .5rem;
-	cursor: pointer;
-	transition: .150s;
-	text-transform: uppercase;
+  justify-self: flex-end;
+  background-color: var(--black-color);
+  border-radius: 0.5rem;  
 }
 
-.form__button:hover {
-	color: #000;
-	background-color: var(--first-color);
+.form__submit {
+  padding: .875rem 1.5rem;
+  background-color: var(--first-color);
+  border-radius: 0.5rem;  
+  cursor: pointer;
+  transition: transform .3s;
 }
 
-.form__input:focus + .form__label {
-	top: -.5rem;
-	left: .8rem;
-	color: var(--first-color);
-	background-color: var(--container-color);
-	font-size: var(--small-font-size);
-	font-weight: var(--font-semi-bold);
-	z-index: 10;
+.form__submit:hover {
+  transform: translate(-6px, -6px);
 }
 
+/* Opaque placeholder */
+.form__input:focus::placeholder {
+  opacity: 0;
+  transition: .3s;
+}
+
+/* Move input and sticky input up */
+.form__input:focus, 
+.form__input:not(:placeholder-shown).form__input:not(:focus) {
+  transform: translate(-8px, -8px);
+  padding: 28px 18px 18px;
+  animation: input-animation .5s;
+}
+
+/* Move label and sticky label up */
+.form__input:focus + .form__label,
 .form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label {
- 	top: -.5rem;
-	left: .8rem;
-	font-size: var(--small-font-size);
-	background-color: var(--container-color);
-	color: var(--text-color);
-	font-weight: 500;
-	z-index: 10;
+  opacity: .6;
+  top: 2px;
+  left: 12px;
+  transition: .3s;
 }
 
-.form__input:focus {
-	border: .2rem solid var(--first-color);
+/* Input bounce animation */
+@keyframes input-animation {
+  0% {
+    transform: translate(0);
+  }
+  40% {
+    transform: translate(-9px, -9px);
+  }
+  60% {
+    transform: translate(-7px, -7px);
+  }
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 340px) {
+  .form__content, 
+  .form__box {
+    width: 100%;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 968px) {
+  .form__content {
+    zoom: 1.1;
+  }
 }
